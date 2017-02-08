@@ -8,6 +8,7 @@ using TECHIS.Messaging;
 
 namespace TECHIS.Messaging
 {
+    [Obsolete("To manager Topics and Subscriptions, use IPublicationResourceManager") ]
     public interface IPublicationManager<TSerializedMessage>:IPublication<TSerializedMessage>
     {
         #region Public Methods 

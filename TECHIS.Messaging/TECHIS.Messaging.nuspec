@@ -11,8 +11,8 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>$description$</description>
     <summary>$description$</summary>
-    <releaseNotes>TECHIS.Messaging interfaces</releaseNotes>
+    <releaseNotes>Added a management interface</releaseNotes>
     <copyright>Copyright © TECH-IS INC. 2017</copyright>
-    <tags>Azure Messaging Servicebus</tags>
+    <tags>Azure Messaging Servicebus TECHIS</tags>
   </metadata>
 </package>
