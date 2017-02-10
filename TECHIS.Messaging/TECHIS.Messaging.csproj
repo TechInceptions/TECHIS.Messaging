@@ -34,12 +34,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreateSubscriptionRequest.cs" />
     <Compile Include="DefaultMessageReceiver.cs" />
     <Compile Include="DefaultPublication.cs" />
     <Compile Include="DefaultPublicationManager.cs" />
     <Compile Include="DefaultPublisher.cs" />
     <Compile Include="DefaultSubscriber.cs" />
+    <Compile Include="DeleteSubscriptionRequest.cs" />
+    <Compile Include="DeleteTopicRequest.cs" />
     <Compile Include="IPublication.cs" />
+    <Compile Include="IPublicationResourceManager.cs" />
     <Compile Include="ISubscriber.cs" />
     <Compile Include="IPublicationManager.cs" />
     <Compile Include="IPublisher.cs" />
@@ -47,10 +51,15 @@
     <Compile Include="IBinaryMessageReceiver.cs" />
     <Compile Include="IStringMessageReceiver.cs" />
     <Compile Include="IMessageReceiver.cs" />
+    <Compile Include="ListSubscriptionRequest.cs" />
+    <Compile Include="ListTopicRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SerializedMessageContainer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>"C:\Program Files (x86)\NuGet\nuget.exe" pack "C:\Git\Code\TECHIS.Messaging\TECHIS.Messaging\TECHIS.Messaging.csproj" -Prop Configuration=Release -outputDirectory "C:\Data\PackageRepo" -symbols</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
