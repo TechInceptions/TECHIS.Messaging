@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TECHIS.Messaging
 {
-    public interface IPublicationResourceManager
+    public interface IPublicationResourceManager:IDisposable
     {
         #region Public Methods 
 

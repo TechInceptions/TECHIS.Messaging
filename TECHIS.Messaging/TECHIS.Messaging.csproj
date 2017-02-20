@@ -38,6 +38,7 @@
     <Compile Include="DefaultMessageReceiver.cs" />
     <Compile Include="DefaultPublication.cs" />
     <Compile Include="DefaultPublicationManager.cs" />
+    <Compile Include="DefaultPublicationResourceManager.cs" />
     <Compile Include="DefaultPublisher.cs" />
     <Compile Include="DefaultSubscriber.cs" />
     <Compile Include="DeleteSubscriptionRequest.cs" />
