@@ -43,8 +43,12 @@
     <Compile Include="DefaultSubscriber.cs" />
     <Compile Include="DeleteSubscriptionRequest.cs" />
     <Compile Include="DeleteTopicRequest.cs" />
+    <Compile Include="IMessageReceiption.cs" />
+    <Compile Include="IMessagePublication.cs" />
     <Compile Include="IPublication.cs" />
     <Compile Include="IPublicationResourceManager.cs" />
+    <Compile Include="IMessageSubscriber.cs" />
+    <Compile Include="IMessagePublisher.cs" />
     <Compile Include="ISubscriber.cs" />
     <Compile Include="IPublicationManager.cs" />
     <Compile Include="IPublisher.cs" />

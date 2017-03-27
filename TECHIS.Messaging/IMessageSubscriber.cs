@@ -8,13 +8,12 @@ using TECHIS.Messaging;
 
 namespace TECHIS.Messaging
 {
-    [Obsolete("Use 'TECHIS.Messaging.IMessageSubscriber<TSerializedMessage>' instead", false)]
-    public interface ISubscriber<TSerializedMessage>
+    public interface IMessageSubscriber<TSerializedMessage>
     {
         
         void Subscribe(string subscriptionName, string topicName, string sql92FilterExpression, Action<ISerializedMessageContainer<TSerializedMessage>> onMessage, int maxConcurrentCalls = 1);
 
-        void SubscribeAsync(string subscriptionName, string topicName, string sql92FilterExpression, Func<ISerializedMessageContainer<TSerializedMessage>, Task> onMessageAsync, int maxConcurrentCalls = 1);
+        Task SubscribeAsync(string subscriptionName, string topicName, string sql92FilterExpression, Func<ISerializedMessageContainer<TSerializedMessage>, Task> onMessageAsync, int maxConcurrentCalls = 1);
         
     }
 }
